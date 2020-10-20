@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A web service providing P2P system for students"
+    />
+    <meta name="author" content="IGY" />
+    <title>바니마켓 | Sign up</title>
+    <link rel="stylesheet" href="./signup.module.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Main Header -->
+      <header class="MainHeader__HeaderWrapper">
+        <div class="MainHeader__Container">
+          <span class="MainHeader__LogoWrapper rowFlex">
+            <a href="#" class="Logo__Container">바니마켓</a>
+            <div class="UnAuthNav__Container">
+              <a href="#" class="UnAuthNav__Login">Sign in</a>
+            </div>
+          </span>
+        </div>
+      </header>
+      <!-- Main page -->
+      <main class="MainPage">
+        <div class="RegisterPage__Container">
+          <div class="RegisterPage__Section">
+            <div class="RegisterPage__Inner">
+              <h1>Sign up</h1>
+              <form>
+                <div class="RegisterPage__FormGroup">
+                  <label class="RegisterPage__FormName">Name</label>
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Kyle"
+                      value=""
+                      class="RegisterPage__Input"
+                    />
+                  </div>
+                </div>
+                <div class="RegisterPage__FormGroup">
+                  <label class="RegisterPage__FormName"
+                    >Password (8 characters)</label
+                  >
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="password"
+                      placeholder="********"
+                      value=""
+                      class="RegisterPage__Input"
+                    />
+                  </div>
+                </div>
+                <div class="RegisterPage__FormGroup">
+                  <label class="RegisterPage__FormName">Confirm password</label>
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="confirm"
+                      placeholder="********"
+                      value=""
+                      class="RegisterPage__Input"
+                    />
+                  </div>
+                </div>
+                <div class="RegisterPage__FormGroup">
+                  <label class="RegisterPage__FormName">Phone</label>
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="Please enter numbers only"
+                      value=""
+                      class="RegisterPage__Input"
+                    />
+                  </div>
+                </div>
+                <div class="RegisterPage__FormGroup">
+                  <label class="RegisterPage__FormName">College</label>
+                  <input type="file" id="upload-btn" hidden />
+                  <label for="upload-btn" id="upload" style="float: right"
+                    >Upload</label
+                  >
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="college"
+                      placeholder="Univ."
+                      value=""
+                      class="RegisterPage__Input"
+                    />
+                  </div>
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="location"
+                      value=""
+                      class="RegisterPage__Input"
+                      hidden
+                    />
+                  </div>
+                </div>
+                <div class="RegisterPage__FormGroup">
+                  <label class="RegisterPage__FormName">Student number</label>
+                  <div class="RegisterPage__InputBox">
+                    <input
+                      type="text"
+                      name="student number"
+                      placeholder="Please enter numbers only"
+                      value=""
+                      class="RegisterPage__Input"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="RegisterPage__SignUpButton">
+                  <span>Sign up</span>
+                </button>
+              </form>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="Footer__Container columnFlex">
+        <div class="Footer__Copyright">
+          Copyright 2020. 바니마켓 All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
