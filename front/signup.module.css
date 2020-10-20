@@ -210,6 +210,17 @@ p {
   box-shadow: 0 0 1px 1px var(--color-black);
 }
 
+#upload {
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  padding: 2px 4px;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+
 .RegisterPage__SignUpButton {
   margin-top: 14px;
   width: 100%;
