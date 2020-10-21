@@ -190,12 +190,12 @@ p {
 }
 
 .Login__SignInButton {
-  background-color: var(--color-orange);
+  background-color: var(--color-light-orange);
   color: var(--color-white);
 }
 
 .Login__SignInButton:hover {
-  background-color: var(--color-light-orange);
+  background-color: var(--color-orange);
 }
 
 .Login__SignUpButton {
