@@ -17,15 +17,13 @@
     <div id="wrapper">
       <!-- Main Header -->
       <header class="MainHeader__HeaderWrapper">
-        <div class="MainHeader__Container">
-          <span class="MainHeader__LogoWrapper rowFlex">
+        <div class="MainHeader__Container rowFlex">
+          <span class="MainHeader__LogoWrapper">
             <a href="../index/index.html" class="Logo__Container">바니마켓</a>
-            <div class="UnAuthNav__Container">
-              <a href="../signin/signin.html" class="UnAuthNav__Login"
-                >Sign in</a
-              >
-            </div>
           </span>
+          <div class="UnAuthNav__Container">
+            <a href="../signin/signin.html" class="UnAuthNav__Login">Sign in</a>
+          </div>
         </div>
       </header>
       <!-- Main page -->
@@ -44,6 +42,7 @@
                       placeholder="Kyle"
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__Name"
                     />
                   </div>
                 </div>
@@ -58,6 +57,7 @@
                       placeholder="********"
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__Password"
                     />
                   </div>
                 </div>
@@ -70,6 +70,7 @@
                       placeholder="********"
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__Confirm"
                     />
                   </div>
                 </div>
@@ -82,6 +83,7 @@
                       placeholder="Please enter numbers only"
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__Phone"
                     />
                   </div>
                 </div>
@@ -98,7 +100,11 @@
                       placeholder="Univ."
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__College"
                     />
+                  </div>
+                  <div>
+                    <ul></ul>
                   </div>
                   <div class="RegisterPage__InputBox">
                     <input
@@ -106,6 +112,7 @@
                       name="location"
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__Location"
                       hidden
                     />
                   </div>
@@ -119,6 +126,7 @@
                       placeholder="Please enter numbers only"
                       value=""
                       class="RegisterPage__Input"
+                      id="Input__StudentNum"
                     />
                   </div>
                 </div>
