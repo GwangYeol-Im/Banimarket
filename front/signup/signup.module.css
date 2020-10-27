@@ -20,6 +20,10 @@
   font-weight: var(--weight-light);
 }
 
+.UnAuthNav__Login > i {
+  margin-right: 5px;
+}
+
 /* Main */
 .RegisterPage__Container {
   padding: 64px 0px 64px;
