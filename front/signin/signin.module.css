@@ -1,0 +1,100 @@
+@import "../global/reset.css";
+@import "../global/global.css";
+
+body {
+  background-color: var(--color-smooth-grey);
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+/* Main */
+.MainPage__PageWrapper {
+  height: 100vh;
+}
+
+.MainPage__PageContainer {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 980px;
+}
+
+/* Logo */
+.Logo__Wrapper {
+  padding-right: 32px;
+  width: 580px;
+}
+
+.Logo__Container {
+  padding: 112px 16px;
+}
+
+.Logo__Container > h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+/* Log in */
+
+.Login__Wrapper {
+  width: 396px;
+  height: 300px;
+  padding: 20px 30px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  text-align: center;
+  caret-color: var(--color-blue);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.Login__FormGroup {
+  margin-bottom: 10px;
+}
+
+.Login__Input,
+.Login__SignInButton,
+.Login__SignUpButton {
+  font-family: "Roboto", sans-serif;
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid var(--color-smooth-grey);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.Login__SignInButton {
+  background-color: var(--color-light-orange);
+  color: var(--color-white);
+}
+
+.Login__SignInButton:hover {
+  background-color: var(--color-orange);
+}
+
+.Login__SignUpButton {
+  background-color: var(--color-light-green);
+  color: var(--color-white);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.Login__SignUpButton:hover {
+  background-color: var(--color-green);
+}
+
+/* Footer */
+.Footer__Container {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-beige);
+  padding: 32px 0px;
+}
+
+.Footer__Copyright {
+  color: var(--color-dark-grey);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  letter-spacing: 0.2px;
+}
