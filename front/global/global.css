@@ -2,7 +2,7 @@
 :root {
   /* Color */
   --color-white: #ffffff;
-  --color-beige: #f3f0e9;
+  --color-beige: #fff9f2;
   --color-light-orange: #ff922b;
   --color-orange: #f86b16;
   --color-dark-orange: #f06007;
@@ -23,6 +23,7 @@
   --font-medium: 22px;
   --font-regular: 18px;
   --font-small: 14px;
+  --font-micro: 12px;
 
   /* Font weight */
   --weight-bold: 700;

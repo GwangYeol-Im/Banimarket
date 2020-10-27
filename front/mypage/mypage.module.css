@@ -59,3 +59,129 @@
 .List__Content:hover .korean__desc {
   color: var(--color-light-grey);
 }
+
+/* Main page */
+
+/* Profile Card */
+
+.MyPage__PageWrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.MyPage__PageContainer {
+  margin: 96px 24px 150px 24px;
+  align-items: flex-start;
+}
+
+.MyPage__LeftAside {
+  margin-right: 40px;
+  width: 360px;
+  box-shadow: rgba(41, 42, 43, 0.08) 0px 2px 6px,
+    rgba(41, 42, 43, 0.04) 0px 1px 0px;
+}
+
+.ProfileCard__Container {
+  margin: 40px 0;
+}
+
+.ProfileCard__ProfileEdit {
+  position: relative;
+  cursor: pointer;
+}
+
+.ProfileCard__Image {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-beige);
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.ProfileCard__Image > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.Edit__Icon {
+  position: absolute;
+  right: 10px;
+}
+
+.Edit__Icon > i {
+  font-size: 20px;
+}
+
+.ProfileCard__UserName {
+  margin-bottom: 20px;
+  font-weight: var(--weight-bold);
+}
+
+.ProfileCard__UserPhone {
+  color: var(--color-dark-grey);
+  margin-bottom: 15px;
+}
+
+.ProfileCard__College {
+  background-color: var(--color-beige);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+/* History */
+
+.MyPage__RightAside {
+  box-shadow: rgba(41, 42, 43, 0.08) 0px 2px 6px,
+    rgba(41, 42, 43, 0.04) 0px 1px 0px;
+}
+
+.MyPage__History {
+  padding: 32px;
+}
+
+.History__Title > h2 {
+  margin-bottom: 20px;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-medium);
+}
+
+.Product__Container {
+  margin-right: 24px;
+}
+
+.Product__Image {
+  width: 200px;
+  height: 130px;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.Product__Image > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Product__Image:hover img {
+  transform: scale(1.1);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.Product__Category {
+  color: var(--color-grey);
+  font-size: var(--font-micro);
+  font-weight: var(--weight-bold);
+  margin-bottom: 10px;
+}
+
+.Product__Name {
+  margin-bottom: 10px;
+}
+
+.Product__Price {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+}
