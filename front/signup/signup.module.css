@@ -87,7 +87,7 @@
   margin-top: 14px;
   width: 100%;
   height: 48px;
-  background-color: var(--color-light-orange);
+  background-color: var(--color-orange);
   border-radius: var(--size-border-radius);
   color: var(--color-white);
   font-weight: var(--weight-bold);
@@ -96,7 +96,7 @@
 }
 
 .RegisterPage__SignUpButton:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-dark-orange);
 }
 
 /* Footer */

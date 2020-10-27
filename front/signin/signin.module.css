@@ -33,7 +33,7 @@ hr {
 .Logo__Container > h1 > a {
   padding-bottom: 20px;
   font-size: 50px;
-  color: var(--color-light-orange);
+  color: var(--color-orange);
 }
 
 /* Log in */
@@ -66,12 +66,12 @@ hr {
 }
 
 .Login__SignInButton {
-  background-color: var(--color-light-orange);
+  background-color: var(--color-orange);
   color: var(--color-white);
 }
 
 .Login__SignInButton:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-dark-orange);
 }
 
 .Login__SignUpButton {
