@@ -33,21 +33,7 @@
 /* Nav bar */
 .NavBar__Container {
   justify-content: space-between;
-}
-
-.Logo__Container > img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-}
-
-.Logo__Container > span {
-  font-size: var(--font-large);
-  font-weight: var(--weight-regular);
-  color: var(--color-orange);
-  position: relative;
-  bottom: 5px;
-  transition: all var(--animation-duration-short) ease-in;
+  padding: 10px 0;
 }
 
 .Logo__Container > img:hover,
@@ -61,7 +47,8 @@
 }
 
 .List__Content > a {
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
   margin: 0 20px;
   transition: all var(--animation-duration-short) ease-in;
 }

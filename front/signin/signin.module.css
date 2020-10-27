@@ -30,9 +30,10 @@ hr {
   padding: 112px 16px;
 }
 
-.Logo__Container > h1 {
+.Logo__Container > h1 > a {
   padding-bottom: 20px;
-  font-size: 40px;
+  font-size: 50px;
+  color: var(--color-light-orange);
 }
 
 /* Log in */
