@@ -134,10 +134,19 @@
   margin-bottom: 15px;
 }
 
-.ProfileCard__College {
+.ProfileCard__College,
+.ProfileCard__Status {
   background-color: var(--color-beige);
   border-radius: 25px;
   padding: 15px;
+}
+
+.ProfileCard__College {
+  margin-bottom: 10px;
+}
+
+.ProfileCard__Status > i {
+  margin-right: 5px;
 }
 
 /* History */
