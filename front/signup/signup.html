@@ -97,11 +97,33 @@
                   </div>
                 </div>
                 <div class="RegisterPage__FormGroup">
-                  <label class="RegisterPage__FormName">College</label>
-                  <input type="file" id="upload-btn" hidden />
-                  <label for="upload-btn" id="upload" style="float: right"
-                    >Upload</label
-                  >
+                  <div class="RegisterPage__FormNameGroup rowFlex">
+                    <label class="RegisterPage__FormName">College</label>
+                    <div class="RegisterPage__ChoiceGroup rowFlex">
+                      <input
+                        type="radio"
+                        id="choice-attend"
+                        name="state"
+                        value="attend"
+                      />
+                      <label class="RegisterPage__Choice" for="choice-attend"
+                        >재학</label
+                      >
+                      <input
+                        type="radio"
+                        id="choice-dorm"
+                        name="state"
+                        value="dorm"
+                      />
+                      <label class="RegisterPage__Choice" for="choice-dorm"
+                        >기숙사</label
+                      >
+                      <input type="file" id="upload-btn" hidden />
+                      <label for="upload-btn" id="upload" style="float: right"
+                        >Upload</label
+                      >
+                    </div>
+                  </div>
                   <div class="RegisterPage__InputBox">
                     <input
                       type="text"
