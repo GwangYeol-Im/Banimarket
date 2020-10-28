@@ -1,6 +1,15 @@
 @import "../global/reset.css";
 @import "../global/global.css";
 
+.Dark__BackGround {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-slate-grey);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
 /* Main Header */
 
 .MainHeader__Container {
@@ -69,17 +78,17 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  height: 80vh;
 }
 
 .MyPage__PageContainer {
-  margin: 96px 24px 150px 24px;
   align-items: flex-start;
 }
 
 .MyPage__LeftAside {
   margin-right: 40px;
   width: 360px;
-  box-shadow: rgba(41, 42, 43, 0.08) 0px 2px 6px,
+  box-shadow: rgba(41, 42, 43, 0.2) 0px 2px 6px,
     rgba(41, 42, 43, 0.04) 0px 1px 0px;
 }
 
@@ -134,7 +143,7 @@
 /* History */
 
 .MyPage__RightAside {
-  box-shadow: rgba(41, 42, 43, 0.08) 0px 2px 6px,
+  box-shadow: rgba(41, 42, 43, 0.2) 0px 2px 6px,
     rgba(41, 42, 43, 0.04) 0px 1px 0px;
 }
 
@@ -184,4 +193,88 @@
 .Product__Price {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
+}
+
+/* Edit Modal */
+
+.MyPage__EditModal {
+  position: absolute;
+  background-color: var(--color-white);
+  top: 100px;
+  box-shadow: var(--box-shadow);
+  width: 600px;
+  border-radius: var(--size-border-radius);
+  display: none;
+  z-index: 2;
+}
+
+.EditModal__Section {
+  padding: 48px 32px;
+}
+
+.EditModal__Inner > h1 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  margin-bottom: 48px;
+}
+
+.EditModal__Image {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-beige);
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.EditModal__Image > label > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.EditModal__FormGroup {
+  margin-bottom: 16px;
+}
+
+.EditModal__FormName {
+  font-size: var(--font-small);
+  color: var(--color-dark-grey);
+}
+
+.EditModal__Input {
+  font-size: var(--font-small);
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  border: 1px solid var(--color-light-border);
+  height: 48px;
+  width: 100%;
+  border-radius: var(--size-border-radius);
+  padding: 0px 16px;
+  margin-top: 4px;
+}
+
+.EditModal__Input:hover {
+  border: 1px solid var(--color-light-grey);
+}
+
+.EditModal__Input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px var(--color-black);
+}
+
+.EditModal__EditButton {
+  margin-top: 14px;
+  width: 100%;
+  height: 48px;
+  background-color: var(--color-orange);
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.EditModal__EditButton:hover {
+  background-color: var(--color-dark-orange);
 }

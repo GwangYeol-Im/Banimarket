@@ -16,8 +16,10 @@
       src="https://kit.fontawesome.com/abaf2d7c99.js"
       crossorigin="anonymous"
     ></script>
+    <script src="mypage.js" defer></script>
   </head>
   <body>
+    <div class="Dark__BackGround"></div>
     <div id="wrapper">
       <!-- Main Header -->
       <header class="MainHeader__HeaderWrapper">
@@ -66,8 +68,9 @@
         </div>
       </nav>
       <!-- Main page -->
-      <main class="MyPage__PageWrapper">
+      <main class="MyPage__PageWrapper rowFlex">
         <div class="MyPage__PageContainer rowFlex">
+          <!-- Profile Card -->
           <div class="MyPage__LeftAside">
             <div class="ProfileCard__Container columnFlex">
               <div class="ProfileCard__UserContainer">
@@ -91,6 +94,78 @@
               </div>
             </div>
           </div>
+          <!-- Edit Modal -->
+          <div class="MyPage__EditModal">
+            <div class="EditModal__Container">
+              <div class="EditModal__Section">
+                <div class="EditModal__Inner">
+                  <h1>프로필 수정</h1>
+                  <form>
+                    <div class="EditModal__ProfileEdit columnFlex">
+                      <span class="EditModal__Image columnFlex">
+                        <input type="file" id="upload-img" hidden />
+                        <label for="upload-img">
+                          <img
+                            src="../images/user.png"
+                            alt="기본 프로필 이미지입니다"
+                        /></label>
+                      </span>
+                    </div>
+                    <div class="EditModal__FormGroup">
+                      <label class="EditModal__FormName">Name</label>
+                      <div class="EditModal__InputBox">
+                        <input
+                          type="text"
+                          name="name"
+                          class="EditModal__Input"
+                          id="Input__Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="EditModal__FormGroup">
+                      <label class="EditModal__FormName">Phone</label>
+                      <div class="EditModal__InputBox">
+                        <input
+                          type="text"
+                          name="phone"
+                          class="EditModal__Input"
+                          id="Input__Phone"
+                        />
+                      </div>
+                    </div>
+                    <div class="EditModal__FormGroup">
+                      <label class="EditModal__FormName">Password</label>
+                      <div class="EditModal__InputBox">
+                        <input
+                          type="password"
+                          name="password"
+                          class="EditModal__Input"
+                          id="Input__Password"
+                        />
+                      </div>
+                    </div>
+                    <div class="EditModal__FormGroup">
+                      <label class="EditModal__FormName"
+                        >Confirm password</label
+                      >
+                      <div class="EditModal__InputBox">
+                        <input
+                          type="password"
+                          name="confirm"
+                          class="EditModal__Input"
+                          id="Input__Confirm"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="EditModal__EditButton">
+                      <span>Edit</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sales History -->
           <div class="MyPage__RightAside">
             <div id="history" class="MyPage__History">
               <section>
