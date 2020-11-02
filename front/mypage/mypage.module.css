@@ -230,7 +230,7 @@
 
 .tablink_1,
 .tablink_2 {
-  padding: 5px;
+  padding: 5px 10px;
   margin: 1px;
   color: var(--color-grey);
   font-size: var(--font-medium);
