@@ -228,10 +228,24 @@
   padding: 40px 32px;
 }
 
-.EditModal__Inner > h1 {
+.tablink_1,
+.tablink_2 {
+  color: var(--color-grey);
   font-size: var(--font-medium);
   font-weight: var(--weight-regular);
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+  box-shadow: 0 -1px 1px 1px rgba(0, 0, 0, 0.15);
   margin-bottom: 48px;
+}
+
+.tabs {
+  display: none;
+}
+
+.default {
+  display: inline;
+  color: var(--color-slate-grey);
 }
 
 .EditModal__Image {
@@ -279,7 +293,8 @@
   box-shadow: 0 0 1px 1px var(--color-black);
 }
 
-.EditModal__EditButton {
+.EditModal__ProfileEditBtn,
+.EditModal__PasswordEditBtn {
   margin: 14px 0;
   width: 100%;
   height: 48px;
@@ -295,6 +310,7 @@
   color: var(--color-blue);
 }
 
-.EditModal__EditButton:hover {
+.EditModal__ProfileEditBtn:hover,
+.EditModal__PasswordEditBtn:hover {
   background-color: var(--color-dark-orange);
 }

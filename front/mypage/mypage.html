@@ -104,8 +104,11 @@
               <div class="EditModal__Section">
                 <button class="EditModal__CloseButton"><i class="fas fa-times"></i></button>
                 <div class="EditModal__Inner">
-                  <h1>프로필 수정</h1>
-                  <form>
+                  <div class="EditModal__Tabs">
+                    <button class="tablink_1 default" onclick="toggleTab(event, 1)">프로필 수정</button>
+                    <button class="tablink_2" onclick="toggleTab(event, 2)">비밀번호 변경</button>
+                  </div>
+                  <form class="tabs tab_1 default">
                     <div class="EditModal__ProfileEdit columnFlex">
                       <span class="EditModal__Image columnFlex">
                         <input type="file" id="upload-img" hidden />
@@ -138,7 +141,15 @@
                         />
                       </div>
                     </div>
-                    <!-- <div class="EditModal__FormGroup">
+                    <button type="submit" class="EditModal__ProfileEditBtn">
+                      <span>Edit</span>
+                    </button>
+                    <span class="EditModal__EmailInfo">
+                      재학 증빙 서류 - kbh1995@gmail.com
+                    </span>
+                  </form>
+                  <form class="tabs tab_2">
+                    <div class="EditModal__FormGroup">
                       <label class="EditModal__FormName">Password</label>
                       <div class="EditModal__InputBox">
                         <input
@@ -146,6 +157,17 @@
                           name="password"
                           class="EditModal__Input"
                           id="Input__Password"
+                        />
+                      </div>
+                    </div>
+                    <div class="EditModal__FormGroup">
+                      <label class="EditModal__FormName">New password</label>
+                      <div class="EditModal__InputBox">
+                        <input
+                          type="password"
+                          name="new_password"
+                          class="EditModal__Input"
+                          id="Input__NewPassword"
                         />
                       </div>
                     </div>
@@ -161,8 +183,8 @@
                           id="Input__Confirm"
                         />
                       </div>
-                    </div> -->
-                    <button type="submit" class="EditModal__EditButton">
+                    </div>
+                    <button type="submit" class="EditModal__PasswordEditBtn">
                       <span>Edit</span>
                     </button>
                     <span class="EditModal__EmailInfo">
