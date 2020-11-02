@@ -26,8 +26,8 @@
 }
 
 .AuthNav__Profile > img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -217,8 +217,15 @@
   z-index: 2;
 }
 
+.EditModal__CloseButton {
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  font-size: var(--font-regular);
+  float: right;
+}
+
 .EditModal__Section {
-  padding: 48px 32px;
+  padding: 40px 32px;
 }
 
 .EditModal__Inner > h1 {
@@ -273,7 +280,7 @@
 }
 
 .EditModal__EditButton {
-  margin-top: 14px;
+  margin: 14px 0;
   width: 100%;
   height: 48px;
   background-color: var(--color-orange);
@@ -282,6 +289,10 @@
   font-weight: var(--weight-bold);
   font-size: var(--font-regular);
   transition: all var(--animation-duration-short) ease-in;
+}
+
+.EditModal__EmailInfo {
+  color: var(--color-blue);
 }
 
 .EditModal__EditButton:hover {

@@ -2,6 +2,7 @@
 
 const EditProfile = document.querySelector(".ProfileCard__ProfileEdit");
 const EditButton = document.querySelector(".EditModal__EditButton");
+const CloseButton = document.querySelector(".EditModal__CloseButton");
 const Modal = document.querySelector(".MyPage__EditModal");
 const DarkBg = document.querySelector(".Dark__BackGround");
 
@@ -11,12 +12,15 @@ EditProfile.addEventListener("click", function () {
   fadeIn(Modal.style, 0.9);
 });
 
-EditButton.addEventListener("click", function (event) {
+EditButton.addEventListener("click", closeModal);
+CloseButton.addEventListener("click", closeModal);
+
+function closeModal(event) {
   event.preventDefault();
   Modal.style.display = "none";
   Modal.style.opacity = "0";
   fadeOut(DarkBg.style);
-});
+}
 
 function fadeIn(style, max) {
   let op = 0;
