@@ -1,0 +1,192 @@
+@import "../../global/reset.css";
+@import "../../global/global.css";
+
+/* Main Header */
+
+.MainHeader__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: right;
+  padding: 10px 0;
+}
+
+.UnAuthNav__Container {
+  margin-right: 16px;
+}
+
+.UnAuthNav__Login,
+.UnAuthNav__SignUp {
+  font-weight: var(--weight-regular);
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  margin: 0 10px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.UnAuthNav__Login > i,
+.UnAuthNav__SignUp > i {
+  margin-right: 5px;
+}
+
+/* Nav bar */
+
+.NavBar__NavWrapper {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+}
+
+.NavBar__Container {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 14px;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-light-orange);
+}
+
+.List__Container {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.List__Content > a {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  margin: 0 20px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.List__Content:hover .korean__desc {
+  color: var(--color-light-grey);
+}
+
+/* Article */
+
+.Detail__ContentWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 700px;
+}
+
+.Detail__ContentImage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Detail__ContentImage > img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--size-border-radius);
+}
+
+.Detail__ProfileContainer {
+  justify-content: space-between;
+  margin: 30px 10px;
+}
+
+.Detail__ProfileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Detail__Profile {
+  align-items: flex-start;
+}
+
+.Profile__Name {
+  font-weight: var(--weight-bold);
+  color: var(--color-dark-grey);
+  margin-bottom: 8px;
+}
+
+.Profile__Status {
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  color: var(--color-grey);
+}
+
+.Detail__EnterChatButton {
+  font-size: var(--font-semi-large);
+  background-color: var(--color-yellow);
+  box-shadow: var(--box-shadow);
+  padding: 8px 12px;
+  border-radius: 10%;
+}
+
+.Detail__ArticleProfile {
+  border-bottom: 1px solid var(--color-light-orange);
+}
+
+.Detail__ArticleDesc {
+  margin: 30px 0 60px 0;
+}
+
+.Detail__InfoContainer {
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.Info__Status {
+  margin-bottom: 10px;
+  color: var(--color-blue);
+  font-size: var(--font-small);
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.Info__Title {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+}
+
+.Info__Category {
+  font-weight: var(--weight-regular);
+  font-size: var(--font-small);
+  color: var(--color-grey);
+  margin-bottom: 8px;
+}
+
+.Info__Price {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  color: var(--color-slate-grey);
+}
+
+.Detail__Others {
+  margin: 50px 0;
+}
+
+.Others__Title {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin-bottom: 20px;
+}
+
+.Others__Cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card__Container {
+  width: 32%;
+}
+
+.Other__Image {
+  width: 100%;
+  border-radius: var(--size-border-radius);
+}
+
+.Other__Title {
+  margin: 10px 0;
+  font-weight: var(--weight-bold);
+}
+
+.Other__Price {
+  color: var(--color-dark-grey);
+}
