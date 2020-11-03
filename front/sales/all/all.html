@@ -40,7 +40,7 @@
       <nav class="NavBar__NavWrapper">
         <div class="NavBar__Container rowFlex">
           <span class="NavBar__LogoWrapper">
-            <a href="#" class="Logo__Container">
+            <a href="../../index/index.html" class="Logo__Container">
               <img src="../../images/logo.png" alt="로고 이미지입니다" />
               <span>BANI MARKET</span>
             </a>
@@ -73,96 +73,145 @@
         <div class="Carousel__CarouselContainer"></div>
       </section>
       <main class="MainPage__PageWrapper">
-        <div class="MainPage__PageContainer">
-          <aside class="MainPage__Search">
-            <div class="MainPage__FilterGroup">
-              <input
-                type="radio"
-                id="filter-new-date"
-                name="filter"
-                value="new-date"
-              />
-              <label for="filter-new-date" class="MainPage__Filter"
-                >최신순</label
-              >
-              <input
-                type="radio"
-                id="filter-lower-price"
-                name="filter"
-                value="lower-price"
-              />
-              <label for="filter-lower-price" class="MainPage__Filter"
-                >낮은 가격순</label
-              >
-              <input
-                type="radio"
-                id="filter-higher-price"
-                name="filter"
-                value="higher-price"
-              />
-              <label for="filter-higher-price" class="MainPage__Filter"
-                >높은 가격순</label
-              >
-            </div>
-            <div class="MainPage__SearchBar">
-              <input
-                type="text"
-                name="search"
-                placeholder="상품 검색"
-                value=""
-                class="SearchBar__Input"
-              />
-              <button type="submit" class="SearchBar__SearchButton">
-                검색
-              </button>
-            </div>
-          </aside>
+        <div class="MainPage__PageContainer columnFlex">
+          <div class="MainPage__AsideContainer rowFlex">
+            <aside class="MainPage__Search rowFlex">
+              <div class="MainPage__FilterGroup">
+                <input
+                  type="radio"
+                  id="filter-new-date"
+                  name="filter"
+                  value="new-date"
+                />
+                <label for="filter-new-date" class="MainPage__Filter"
+                  >최신순</label
+                >
+                <input
+                  type="radio"
+                  id="filter-lower-price"
+                  name="filter"
+                  value="lower-price"
+                />
+                <label for="filter-lower-price" class="MainPage__Filter"
+                  >낮은 가격순</label
+                >
+                <input
+                  type="radio"
+                  id="filter-higher-price"
+                  name="filter"
+                  value="higher-price"
+                />
+                <label for="filter-higher-price" class="MainPage__Filter"
+                  >높은 가격순</label
+                >
+              </div>
+              <div class="MainPage__SearchBar korean__desc">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="상품 검색"
+                  value=""
+                  class="SearchBar__Input"
+                />
+                <button type="submit" class="SearchBar__SearchButton">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </aside>
+          </div>
           <section class="MainPage__SalesList">
-            <h2 class="SalesList__Title">상품 목록</h2>
-            <ul class="SalesList__Cards">
-              <li>
-                <a href="#" class="SalesList__Product">
-                  <div class="Product__Info">
-                    <img src="../../images/phone.jpeg" class="Product__Image" />
-                    <dl class="Product__Desc">
-                      <dt class="Product__Title">Samsung Galaxy S10</dt>
-                      <dd class="Product__Price">1,000,000원</dd>
-                    </dl>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="SalesList__Product">
-                  <div class="Product__Info">
-                    <img src="../../images/phone.jpeg" class="Product__Image" />
-                    <dl class="Product__Desc">
-                      <dt class="Product__Title">Samsung Galaxy S10</dt>
-                      <dd class="Product__Price">1,000,000원</dd>
-                    </dl>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="SalesList__Product">
-                  <div class="Product__Info">
-                    <img src="../../images/phone.jpeg" class="Product__Image" />
-                    <dl class="Product__Desc">
-                      <dt class="Product__Title">Samsung Galaxy S10</dt>
-                      <dd class="Product__Price">1,000,000원</dd>
-                    </dl>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <ul class="SalesList__Pagination">
+            <div class="MainPage__SalesListContainer">
+              <div class="SalesList__HeaderContainer rowFlex">
+                <div class="SalesList__TitleContainer rowFlex">
+                  <h3 class="SalesList__Title korean__heading">상품 목록</h3>
+                  <h3 class="SalesList__CurLocation korean__desc">전체</h3>
+                </div>
+                <button id="upload-product">등록</button>
+              </div>
+              <ul class="SalesList__Cards rowFlex">
+                <li>
+                  <a href="#" class="SalesList__Product">
+                    <div class="Product__Info">
+                      <img
+                        src="../../images/phone.jpeg"
+                        class="Product__Image"
+                      />
+                      <dl class="Product__Desc">
+                        <dt class="Product__Title">Samsung Galaxy S10</dt>
+                        <dd class="Product__InnerDesc rowFlex">
+                          <span class="Product__Price">1,000,000원</span>
+                          <span class="Product__Seller">Kyle</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="SalesList__Product">
+                    <div class="Product__Info">
+                      <img
+                        src="../../images/phone.jpeg"
+                        class="Product__Image"
+                      />
+                      <dl class="Product__Desc">
+                        <dt class="Product__Title">Samsung Galaxy S10</dt>
+                        <dd class="Product__InnerDesc rowFlex">
+                          <span class="Product__Price">1,000,000원</span>
+                          <span class="Product__Seller">Kyle</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="SalesList__Product">
+                    <div class="Product__Info">
+                      <img
+                        src="../../images/phone.jpeg"
+                        class="Product__Image"
+                      />
+                      <dl class="Product__Desc">
+                        <dt class="Product__Title">Samsung Galaxy S10</dt>
+                        <dd class="Product__InnerDesc rowFlex">
+                          <span class="Product__Price">1,000,000원</span>
+                          <span class="Product__Seller">Kyle</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="SalesList__Product">
+                    <div class="Product__Info">
+                      <img
+                        src="../../images/phone.jpeg"
+                        class="Product__Image"
+                      />
+                      <dl class="Product__Desc">
+                        <dt class="Product__Title">Samsung Galaxy S10</dt>
+                        <dd class="Product__InnerDesc rowFlex">
+                          <span class="Product__Price">1,000,000원</span>
+                          <span class="Product__Seller">Kyle</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="SalesList__Pagination rowFlex">
               <li class="Page__Item">
-                <a href="#" class="Page__Link">Previous</a>
+                <a href="#" class="Page__Link"
+                  ><i class="fas fa-less-than"></i
+                ></a>
               </li>
               <li class="Page__Item"><a href="#" class="Page__Link">1</a></li>
               <li class="Page__Item"><a href="#" class="Page__Link">2</a></li>
               <li class="Page__Item"><a href="#" class="Page__Link">3</a></li>
               <li class="Page__Item">
-                <a href="#" class="Page__Link">Next</a>
+                <a href="#" class="Page__Link"
+                  ><i class="fas fa-greater-than"></i
+                ></a>
               </li>
             </ul>
           </section>

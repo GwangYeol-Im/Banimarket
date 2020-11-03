@@ -17,7 +17,6 @@
   margin-right: auto;
   max-width: 1200px;
   padding: 10px 0;
-  box-shadow: 0px 2px 2px -2px var(--color-orange);
 }
 
 .AuthNav__Container {
@@ -51,6 +50,7 @@
   max-width: 1200px;
   padding: 14px;
   justify-content: space-between;
+  border-top: 1px solid var(--color-light-orange);
 }
 
 .List__Container {

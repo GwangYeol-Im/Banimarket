@@ -9,7 +9,6 @@
   max-width: 1200px;
   text-align: right;
   padding: 10px 0;
-  box-shadow: 0px 2px 2px -2px var(--color-orange);
 }
 
 .UnAuthNav__Container {
@@ -37,6 +36,7 @@
   max-width: 1200px;
   padding: 14px;
   justify-content: space-between;
+  border-top: 1px solid var(--color-light-orange);
 }
 
 .List__Container {
@@ -79,7 +79,7 @@
 .MainPage__CopyCotainer {
   margin-bottom: 100px;
   padding: 12px;
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 .MainPage__CopyCotainer > h1 {
