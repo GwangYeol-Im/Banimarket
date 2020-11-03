@@ -68,17 +68,18 @@
 
 .MainPage__PageContainer {
   position: absolute;
-  justify-content: space-between;
-  width: 1200px;
+  justify-content: space-around;
+  width: 1350px;
 }
 
 .MainPage__LeftAside {
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .MainPage__CopyCotainer {
   margin-bottom: 100px;
   padding: 12px;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 .MainPage__CopyCotainer > h1 {
@@ -100,7 +101,7 @@
 
 .MainPage__NavButton {
   background-color: transparent;
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-black);
   font-size: var(--font-semi-large);
   padding: 18px;
   border-radius: var(--size-border-radius);
@@ -108,7 +109,7 @@
 }
 
 .MainPage__NavButton > a {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .MainPage__NavButton:hover {
