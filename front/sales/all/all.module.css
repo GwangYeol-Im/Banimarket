@@ -1,0 +1,56 @@
+@import "../../global/reset.css";
+@import "../../global/global.css";
+
+/* Main Header */
+
+.MainHeader__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: right;
+  padding: 10px 0;
+  box-shadow: 0px 2px 2px -2px var(--color-orange);
+}
+
+.UnAuthNav__Container {
+  margin-right: 16px;
+}
+
+.UnAuthNav__Login,
+.UnAuthNav__SignUp {
+  font-weight: var(--weight-regular);
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  margin: 0 10px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.UnAuthNav__Login > i,
+.UnAuthNav__SignUp > i {
+  margin-right: 5px;
+}
+
+/* Nav bar */
+.NavBar__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 14px;
+  justify-content: space-between;
+}
+
+.List__Container {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.List__Content > a {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  margin: 0 20px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.List__Content:hover .korean__desc {
+  color: var(--color-light-grey);
+}
