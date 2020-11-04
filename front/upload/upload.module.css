@@ -89,10 +89,11 @@
   margin-bottom: 30px;
 }
 
-/*수정페이지 .Upload__SelectStatus > select 추가*/
 .Upload__Input,
 .Upload__TextArea,
-.Upload__SelectCategory > select {
+.Upload__SelectCategory > select,
+.Upload__SelectStatus > select,
+.Upload__SelectActive > select {
   width: 100%;
   font-size: var(--font-medium);
   outline: none;
@@ -102,22 +103,21 @@
   margin-bottom: 30px;
 }
 
-/* only 업로드 페이지 */
-.Upload__SelectCategory {
-  width: 100%;
-}
-
-/* only 수정 페이지
 .Upload__SelectGroup {
   width: 100%;
-  justify-content: space-around;
 }
 
+/* 등록 페이지 */
 .Upload__SelectCategory,
+.Upload__SelectActive {
+  width: 50%;
+}
+
+/* 수정 페이지 */
+/* .Upload__SelectCategory,
 .Upload__SelectStatus {
   width: 50%;
-} 
-*/
+} */
 
 .Upload__SelectCategory > select {
   cursor: pointer;
