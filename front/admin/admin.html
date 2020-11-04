@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="바니마켓 인덱스 페이지입니다." />
+    <meta name="author" content="IGY" />
+    <title>바니마켓 | 언제나 바로 네 곁에</title>
+    <link rel="stylesheet" href="./admin.module.css" />
+    <link rel="icon" type="image/jpeg" href="../images/pavicon.jpeg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/abaf2d7c99.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Main Header -->
+      <header class="MainHeader__HeaderWrapper">
+        <div class="MainHeader__Container">
+          <div class="UnAuthNav__Container korean__desc">
+            <a href="../signin/signin.html" class="UnAuthNav__Login"
+              ><i class="fas fa-sign-in-alt"></i>로그인</a
+            >
+            <a href="../signup/signup.html" class="UnAuthNav__SignUp"
+              ><i class="fas fa-user-plus"></i>회원가입
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- Nav Bar -->
+      <nav class="NavBar__NavWrapper">
+        <div class="NavBar__Container rowFlex">
+          <span class="NavBar__LogoWrapper">
+            <a href="#" class="Logo__Container">
+              <img src="../images/logo.png" alt="로고 이미지입니다" />
+              <span>BANI MARKET</span>
+            </a>
+          </span>
+          <span class="NavBar__ListWrapper">
+            <ul class="List__Container rowFlex">
+              <li class="List__Content">
+                <a href="../sales/all/all.html" class="korean__desc">전체</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">식품</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">전자기기</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">도서</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">패션</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">기타</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </nav>
+      <!-- Admin Section -->
+      <section class="Admin__AdminWrapper columnFlex">
+        <div class="Admin__AdminContainer columnFlex">
+          <div class="Admin__AdminTabs rowFlex">
+            <button
+              class="tablink_1 korean__desc default"
+              onclick="toggleTab(event, 1)"
+            >
+              신규회원 조회
+            </button>
+            <button
+              class="tablink_2 korean__desc"
+              onclick="toggleTab(event, 2)"
+            >
+              기존유저 관리
+            </button>
+          </div>
+          <div class="tabs tab_1">
+            <table class="Admin__NewUserTable">
+              <thead>
+                <tr>
+                  <th>회원 번호</th>
+                  <th>아이디</th>
+                  <th>가입일</th>
+                  <th>구분</th>
+                  <th>등급</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <td>3</td>
+                <td>testuser3</td>
+                <td>2020.11.02</td>
+                <td>기숙사생</td>
+                <td>관리자</td>
+                <td>
+                  <button type="button" class="NewUser__InfoButton">
+                    상세확인
+                  </button>
+                </td>
+              </tbody>
+              <tbody>
+                <td>4</td>
+                <td>testuser4</td>
+                <td>2020.11.02</td>
+                <td>기숙사생</td>
+                <td>유저</td>
+                <td>
+                  <button type="button" class="NewUser__InfoButton">
+                    상세확인
+                  </button>
+                </td>
+              </tbody>
+            </table>
+          </div>
+          <div class="tabs tab_2">
+            <table class="Admin__CurUserTable">
+              <thead>
+                <tr>
+                  <th>회원 번호</th>
+                  <th>아이디</th>
+                  <th>가입일</th>
+                  <th>구분</th>
+                  <th>등급</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <td>1</td>
+                <td>kyle</td>
+                <td>2020.11.02</td>
+                <td>기숙사생</td>
+                <td>관리자</td>
+                <td>
+                  <button type="button" class="CurUser__InfoButton">
+                    상세확인
+                  </button>
+                </td>
+              </tbody>
+              <tbody>
+                <td>2</td>
+                <td>simpson</td>
+                <td>2020.11.02</td>
+                <td>기숙사생</td>
+                <td>유저</td>
+                <td>
+                  <button type="button" class="CurUser__InfoButton">
+                    상세확인
+                  </button>
+                </td>
+              </tbody>
+            </table>
+          </div>
+          <div class="CurUser__SearchBar rowFlex">
+            <div class="SearchBar__SelectCategory">
+              <select>
+                <option value="0" selected>아이디</option>
+                <option value="1">닉네임</option>
+              </select>
+            </div>
+            <input type="search" /><button type="submit">검색</button>
+          </div>
+        </div>
+      </section>
+      <!-- User Info Modal -->
+      <!-- Footer -->
+      <footer class="Footer__Container columnFlex">
+        <div class="Footer__Copyright">
+          Copyright 2020. 바니마켓 All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

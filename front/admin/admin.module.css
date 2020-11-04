@@ -1,0 +1,160 @@
+@import "../global/reset.css";
+@import "../global/global.css";
+
+/* Main Header */
+
+.MainHeader__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: right;
+  padding: 10px 0;
+}
+
+.UnAuthNav__Container {
+  margin-right: 16px;
+}
+
+.UnAuthNav__Login,
+.UnAuthNav__SignUp {
+  font-weight: var(--weight-regular);
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  margin: 0 10px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.UnAuthNav__Login > i,
+.UnAuthNav__SignUp > i {
+  margin-right: 5px;
+}
+
+/* Nav bar */
+.NavBar__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 14px;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-light-orange);
+}
+
+.List__Container {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.List__Content > a {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  margin: 0 20px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.List__Content:hover .korean__desc {
+  color: var(--color-light-grey);
+}
+
+/* Admin */
+
+.Admin__AdminWrapper {
+  width: 800px;
+  margin: 80px auto 120px auto;
+  height: 60vh;
+}
+
+.Admin__AdminContainer {
+  width: 100%;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--size-border-radius);
+}
+
+.Admin__AdminTabs {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.tablink_1,
+.tablink_2 {
+  color: var(--color-grey);
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: var(--size-border-radius);
+  box-shadow: 0 -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.default {
+  display: inline;
+  color: var(--color-slate-grey);
+}
+
+.tabs {
+  width: 100%;
+}
+
+.tab_2 {
+  display: none;
+}
+
+.Admin__NewUserTable,
+.Admin__CurUserTable {
+  width: 100%;
+  border-radius: var(--size-border-radius);
+  margin-top: 0px;
+}
+
+thead {
+  background-color: var(--color-sky-blue);
+}
+
+tbody {
+  border-bottom: 1px solid var(--color-light-border);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px 0;
+}
+
+td {
+  color: var(--color-dark-grey);
+}
+
+.NewUser__InfoButton,
+.CurUser__InfoButton {
+  background-color: var(--color-light-orange);
+  padding: 10px;
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
+}
+
+.CurUser__SearchBar {
+  margin-top: 30px;
+  visibility: hidden;
+}
+
+.CurUser__SearchBar > input {
+  font-size: var(--font-regular);
+  outline: none;
+  border: 1px solid var(--color-light-border);
+  padding: 3px;
+  width: 200px;
+}
+
+.SearchBar__SelectCategory > select {
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  font-size: var(--font-small);
+  cursor: pointer;
+}
+
+.CurUser__SearchBar > button {
+  background-color: var(--color-light-orange);
+  color: var(--color-white);
+  border-radius: var(--size-border-radius);
+  padding: 5px 8px;
+  margin-left: 10px;
+}
