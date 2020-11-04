@@ -7,6 +7,7 @@
   --color-light-orange: #ff922b;
   --color-orange: #f86b16;
   --color-dark-orange: #f06007;
+  --color-red: #f71200;
   --color-sky-blue: #93ddfd;
   --color-blue: #1877f2;
   --color-light-green: #04c75a;
@@ -137,6 +138,16 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-slate-grey);
   margin: 4px 0px;
+}
+
+/* Dark Mode */
+.Dark__BackGround {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-slate-grey);
+  position: absolute;
+  z-index: 1;
+  display: none;
 }
 
 /* logo */

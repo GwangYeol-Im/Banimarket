@@ -1,15 +1,6 @@
 @import "../global/reset.css";
 @import "../global/global.css";
 
-.Dark__BackGround {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color-slate-grey);
-  position: absolute;
-  z-index: 1;
-  display: none;
-}
-
 /* Main Header */
 
 .MainHeader__Container {
