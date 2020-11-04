@@ -23,6 +23,7 @@
     <script src="admin.js" defer></script>
   </head>
   <body>
+    <div class="Dark__BackGround"></div>
     <div class="wrapper">
       <!-- Main Header -->
       <header class="MainHeader__HeaderWrapper">
@@ -170,11 +171,66 @@
                 <option value="1">닉네임</option>
               </select>
             </div>
-            <input type="search" /><button type="submit">검색</button>
+            <input type="text" /><button type="submit">검색</button>
           </div>
         </div>
       </section>
       <!-- User Info Modal -->
+      <section class="Admin__InfoModal columnFlex">
+        <div class="InfoModal__Container">
+          <div class="InfoModal__Section">
+            <button class="InfoModal__CloseButton">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="InfoModal__Inner">
+              <h3 class="InfoModal__Title">상세 정보</h3>
+              <div class="InfoModal__InfoGroup korean__desc">
+                <dl class="Info__Id UserInfo">
+                  <dt>아이디</dt>
+                  <dd>kyle</dd>
+                </dl>
+                <dl class="Info__Name UserInfo">
+                  <dt>닉네임</dt>
+                  <dd>kyle</dd>
+                </dl>
+                <dl class="Info__Phone UserInfo">
+                  <dt>연락처</dt>
+                  <dd>010-1234-5678</dd>
+                </dl>
+                <dl class="Info__College UserInfo">
+                  <dt>학교</dt>
+                  <dd>한국 폴리텍</dd>
+                </dl>
+                <dl class="Info__StudentNum UserInfo">
+                  <dt>학번</dt>
+                  <dd>2007110001</dd>
+                </dl>
+                <dl class="Info__Status UserInfo">
+                  <dt>구분</dt>
+                  <dd>기숙사생</dd>
+                </dl>
+                <dl class="Info__Image UserInfo">
+                  <dt>첨부 사진</dt>
+                  <dd>
+                    <img
+                      src="../images/keyboard.jpeg"
+                      alt="재학 증명 이미지입니다"
+                    />
+                  </dd>
+                </dl>
+              </div>
+              <div class="InfoModal__AccessGroup">
+                <button type="button" class="InfoModal__Button Deny">
+                  거절
+                </button>
+                <button type="button" class="InfoModal__Button Access">
+                  승인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Footer -->
       <footer class="Footer__Container columnFlex">
         <div class="Footer__Copyright">

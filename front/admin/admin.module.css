@@ -1,6 +1,10 @@
 @import "../global/reset.css";
 @import "../global/global.css";
 
+.wrapper {
+  position: relative;
+}
+
 /* Main Header */
 
 .MainHeader__Container {
@@ -91,6 +95,8 @@
 
 .tabs {
   width: 100%;
+  overflow: scroll;
+  height: 300px;
 }
 
 .tab_2 {
@@ -137,6 +143,8 @@ td {
 
 .CurUser__SearchBar > input {
   font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-dark-grey);
   outline: none;
   border: 1px solid var(--color-light-border);
   padding: 3px;
@@ -157,4 +165,77 @@ td {
   border-radius: var(--size-border-radius);
   padding: 5px 8px;
   margin-left: 10px;
+}
+
+/* Info Modal */
+
+.InfoModal__Container {
+  position: absolute;
+  top: 100px;
+  width: 600px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+  border: 1px solid var(--color-light-border);
+  box-shadow: var(--box-shadow);
+  padding: 30px 50px;
+  z-index: 2;
+  display: none;
+  opacity: 0;
+}
+
+.InfoModal__CloseButton {
+  float: right;
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  font-size: var(--font-regular);
+}
+
+.InfoModal__InfoGroup {
+  margin-bottom: 30px;
+}
+
+.InfoModal__Title {
+  font-weight: var(--weight-bold);
+  margin-bottom: 30px;
+}
+
+.UserInfo {
+  display: flex;
+  margin: 20px 0;
+}
+
+.UserInfo > dt {
+  flex-basis: 20%;
+  color: var(--color-dark-grey);
+}
+
+.Info__Image > dd {
+  flex-basis: 30%;
+}
+
+.Info__Image > dd > img {
+  width: 100%;
+  border-radius: var(--size-border-radius);
+}
+
+.InfoModal__AccessGroup {
+  float: right;
+}
+
+.InfoModal__Button {
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: var(--font-small);
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
+  margin-top: 30px;
+}
+
+.Deny {
+  background-color: var(--color-red);
+}
+
+.Access {
+  background-color: var(--color-blue);
 }
