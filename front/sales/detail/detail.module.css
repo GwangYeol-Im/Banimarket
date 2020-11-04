@@ -133,11 +133,22 @@
   margin-bottom: 30px;
 }
 
-.Info__Status {
+.Info__Prefix {
+  width: 100%;
+  align-items: center;
   margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.Info__Status {
   color: var(--color-blue);
   font-size: var(--font-small);
   font-family: "Nanum Gothic Coding", monospace;
+}
+
+.Info__Date {
+  font-size: var(--font-small);
+  color: var(--color-grey);
 }
 
 .Info__Title {
