@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="바니마켓 상품 등록 페이지입니다." />
+    <meta name="author" content="IGY" />
+    <title>바니마켓 | 상품 등록</title>
+    <link rel="stylesheet" href="./upload.module.css" />
+    <link rel="icon" type="image/jpeg" href="../images/pavicon.jpeg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/abaf2d7c99.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="upload.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Main Header -->
+      <header class="MainHeader__HeaderWrapper">
+        <div class="MainHeader__Container">
+          <div class="UnAuthNav__Container korean__desc">
+            <a href="../signin/signin.html" class="UnAuthNav__Login"
+              ><i class="fas fa-sign-in-alt"></i>로그인</a
+            >
+            <a href="../signup/signup.html" class="UnAuthNav__SignUp"
+              ><i class="fas fa-user-plus"></i>회원가입
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- Nav Bar -->
+      <nav class="NavBar__NavWrapper">
+        <div class="NavBar__Container rowFlex">
+          <span class="NavBar__LogoWrapper">
+            <a href="../index/index.html" class="Logo__Container">
+              <img src="../images/logo.png" alt="로고 이미지입니다" />
+              <span>BANI MARKET</span>
+            </a>
+          </span>
+          <span class="NavBar__ListWrapper">
+            <ul class="List__Container rowFlex">
+              <li class="List__Content">
+                <a href="#" class="korean__desc">전체</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">식품</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">전자기기</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">도서</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">패션</a>
+              </li>
+              <li class="List__Content">
+                <a href="#" class="korean__desc">기타</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </nav>
+      <article class="Upload__UploadWrapper korean__desc">
+        <section class="Upload__UploadContainer columnFlex">
+          <div class="Upload__UploadTitle korean__heading">
+            <h1>중고거래 글쓰기</h1>
+          </div>
+          <input type="file" id="upload-product-btn" hidden />
+          <label for="upload-product-btn" id="upload-product"
+            ><i class="fas fa-camera"></i
+          ></label>
+          <input
+            type="text"
+            name="title"
+            placeholder="제목"
+            value=""
+            class="Upload__Input"
+          />
+          <!-- 업로드 페이지 -->
+          <div class="Upload__SelectCategory">
+            <select>
+              <option selected>카테고리</option>
+              <option value="0">식품</option>
+              <option value="1">전자기기</option>
+              <option value="2">도서</option>
+              <option value="3">패션</option>
+              <option value="4">기타</option>
+            </select>
+          </div>
+          <!-- 수정페이지 -->
+          <!-- <div class="Upload__SelectGroup rowFlex">
+            <div class="Upload__SelectCategory">
+              <select>
+                <option selected>카테고리</option>
+                <option value="0">식품</option>
+                <option value="1">전자기기</option>
+                <option value="2">도서</option>
+                <option value="3">패션</option>
+                <option value="4">기타</option>
+              </select>
+            </div>
+            <div class="Upload__SelectStatus">
+              <select>
+                <option value="0" selected>거래 가능</option>
+                <option value="1">판매 완료</option>
+              </select>
+            </div>
+          </div> -->
+          <input
+            type="text"
+            name="price"
+            placeholder="₩ 가격"
+            value=""
+            class="Upload__Input"
+          />
+          <textarea
+            name="description"
+            placeholder="게시글 내용을 작성해주세요."
+            cols="40"
+            rows="5"
+            class="Upload__TextArea"
+          ></textarea>
+          <button type="submit" class="Upload__UploadButton">
+            <span>등록</span>
+          </button>
+        </section>
+      </article>
+      <!-- Footer -->
+      <footer class="Footer__Container columnFlex">
+        <div class="Footer__Copyright">
+          Copyright 2020. 바니마켓 All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

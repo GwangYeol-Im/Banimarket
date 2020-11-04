@@ -1,0 +1,144 @@
+@import "../global/reset.css";
+@import "../global/global.css";
+
+/* Main Header */
+
+.MainHeader__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: right;
+  padding: 10px 0;
+}
+
+.UnAuthNav__Container {
+  margin-right: 16px;
+}
+
+.UnAuthNav__Login,
+.UnAuthNav__SignUp {
+  font-weight: var(--weight-regular);
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  margin: 0 10px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.UnAuthNav__Login > i,
+.UnAuthNav__SignUp > i {
+  margin-right: 5px;
+}
+
+/* Nav bar */
+
+.NavBar__NavWrapper {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+}
+
+.NavBar__Container {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 14px;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-light-orange);
+}
+
+.List__Container {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.List__Content > a {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  margin: 0 20px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.List__Content:hover .korean__desc {
+  color: var(--color-light-grey);
+}
+
+/* Upload */
+
+.Upload__UploadWrapper {
+  width: 600px;
+  margin: 60px auto 120px auto;
+}
+
+.Upload__UploadTitle {
+  width: 100%;
+  border-bottom: 1px solid var(--color-light-border);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+#upload-product {
+  font-size: var(--font-semi-large);
+  color: var(--color-grey);
+  border: 1px solid var(--color-light-border);
+  border-radius: var(--size-border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/*수정페이지 .Upload__SelectStatus > select 추가*/
+.Upload__Input,
+.Upload__TextArea,
+.Upload__SelectCategory > select {
+  width: 100%;
+  font-size: var(--font-medium);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-light-border);
+  padding: 20px 8px;
+  margin-bottom: 30px;
+}
+
+/* only 업로드 페이지 */
+.Upload__SelectCategory {
+  width: 100%;
+}
+
+/* only 수정 페이지
+.Upload__SelectGroup {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.Upload__SelectCategory,
+.Upload__SelectStatus {
+  width: 50%;
+} 
+*/
+
+.Upload__SelectCategory > select {
+  cursor: pointer;
+}
+
+.Upload__TextArea {
+  resize: none;
+}
+
+.Upload__UploadButton {
+  margin-top: 14px;
+  width: 100%;
+  height: 48px;
+  background-color: var(--color-orange);
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.Upload__UploadButton:hover {
+  background-color: var(--color-dark-orange);
+}
