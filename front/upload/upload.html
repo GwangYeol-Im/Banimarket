@@ -71,77 +71,79 @@
       </nav>
       <article class="Upload__UploadWrapper korean__desc">
         <section class="Upload__UploadContainer columnFlex">
-          <div class="Upload__UploadTitle korean__heading">
-            <h1>중고거래 글쓰기</h1>
-            <!-- 수정 페이지 -->
-            <!-- <h1>중고거래 수정하기</h1> -->
-          </div>
-          <input type="file" id="upload-product-btn" hidden />
-          <label for="upload-product-btn" id="upload-product"
-            ><i class="fas fa-camera"></i
-          ></label>
-          <input
-            type="text"
-            name="title"
-            placeholder="제목"
-            value=""
-            class="Upload__Input"
-          />
-          <!-- 업로드 페이지 -->
-          <div class="Upload__SelectGroup rowFlex">
-            <div class="Upload__SelectCategory">
-              <select>
-                <option selected>카테고리</option>
-                <option value="0">식품</option>
-                <option value="1">전자기기</option>
-                <option value="2">도서</option>
-                <option value="3">패션</option>
-                <option value="4">기타</option>
-              </select>
+          <form action="" id="upload-form" class="columnFlex">
+            <div class="Upload__UploadTitle korean__heading">
+              <h1>중고거래 글쓰기</h1>
+              <!-- 수정 페이지 -->
+              <!-- <h1>중고거래 수정하기</h1> -->
             </div>
-            <div class="Upload__SelectActive">
-              <select>
-                <option value="0" selected>팝니다</option>
-                <option value="1">삽니다</option>
-              </select>
+            <input type="file" id="upload-product-btn" hidden />
+            <label for="upload-product-btn" id="upload-product"
+              ><i class="fas fa-camera"></i
+            ></label>
+            <input
+              type="text"
+              name="title"
+              placeholder="제목"
+              value=""
+              class="Upload__Input"
+            />
+            <!-- 업로드 페이지 -->
+            <div class="Upload__SelectGroup rowFlex">
+              <div class="Upload__SelectCategory">
+                <select>
+                  <option selected>카테고리</option>
+                  <option value="0">식품</option>
+                  <option value="1">전자기기</option>
+                  <option value="2">도서</option>
+                  <option value="3">패션</option>
+                  <option value="4">기타</option>
+                </select>
+              </div>
+              <div class="Upload__SelectActive">
+                <select>
+                  <option value="0" selected>팝니다</option>
+                  <option value="1">삽니다</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <!-- 수정페이지 -->
-          <!-- <div class="Upload__SelectGroup rowFlex">
-            <div class="Upload__SelectCategory">
-              <select>
-                <option selected>카테고리</option>
-                <option value="0">식품</option>
-                <option value="1">전자기기</option>
-                <option value="2">도서</option>
-                <option value="3">패션</option>
-                <option value="4">기타</option>
-              </select>
-            </div>
-            <div class="Upload__SelectStatus">
-              <select>
-                <option value="0" selected>거래 가능</option>
-                <option value="1">거래 완료</option>
-              </select>
-            </div>
-          </div> -->
-          <input
-            type="text"
-            name="price"
-            placeholder="₩ 가격"
-            value=""
-            class="Upload__Input"
-          />
-          <textarea
-            name="description"
-            placeholder="게시글 내용을 작성해주세요."
-            cols="40"
-            rows="5"
-            class="Upload__TextArea"
-          ></textarea>
-          <button type="submit" class="Upload__UploadButton">
-            <span>등록</span>
-          </button>
+            <!-- 수정페이지 -->
+            <!-- <div class="Upload__SelectGroup rowFlex">
+              <div class="Upload__SelectCategory">
+                <select>
+                  <option selected>카테고리</option>
+                  <option value="0">식품</option>
+                  <option value="1">전자기기</option>
+                  <option value="2">도서</option>
+                  <option value="3">패션</option>
+                  <option value="4">기타</option>
+                </select>
+              </div>
+              <div class="Upload__SelectStatus">
+                <select>
+                  <option value="0" selected>거래 가능</option>
+                  <option value="1">거래 완료</option>
+                </select>
+              </div>
+            </div> -->
+            <input
+              type="text"
+              name="price"
+              placeholder="₩ 가격"
+              value=""
+              class="Upload__Input"
+            />
+            <textarea
+              name="description"
+              placeholder="게시글 내용을 작성해주세요."
+              cols="40"
+              rows="5"
+              class="Upload__TextArea"
+            ></textarea>
+            <button type="submit" class="Upload__UploadButton">
+              <span>등록</span>
+            </button>
+          </form>
         </section>
       </article>
       <!-- Footer -->
