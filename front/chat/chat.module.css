@@ -1,0 +1,212 @@
+@import "../global/reset.css";
+@import "../global/global.css";
+
+/* Main Header */
+
+.MainHeader__Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: right;
+  padding: 10px 0;
+}
+
+.UnAuthNav__Container {
+  margin-right: 16px;
+}
+
+.UnAuthNav__Login,
+.UnAuthNav__SignUp {
+  font-weight: var(--weight-regular);
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  margin: 0 10px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.UnAuthNav__Login > i,
+.UnAuthNav__SignUp > i {
+  margin-right: 5px;
+}
+
+/* Nav bar */
+
+.NavBar__NavWrapper {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  z-index: 2;
+}
+
+.NavBar__Container {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 14px;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-light-orange);
+}
+
+.List__Container {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.List__Content > a {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  margin: 0 20px;
+  transition: all var(--animation-duration-short) ease-in;
+}
+
+.List__Content:hover .korean__desc {
+  color: var(--color-light-grey);
+}
+
+/* Chat */
+
+.Chat__ChatWrapper {
+  margin: 70px auto 120px auto;
+  max-width: 900px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: var(--size-border-radius);
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.Chat__ChatContainer {
+  width: 100%;
+}
+
+.Chat__HeaderContainer {
+  width: 100%;
+  justify-content: flex-start;
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: #e9dccd;
+}
+
+.Chat__HeaderContainer > div {
+  margin-left: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.Chat__ProductImage > img {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--size-border-radius);
+}
+
+.Chat__InfoContainer {
+  align-items: flex-start;
+}
+
+.Chat__ProductTitle,
+.Chat__ProductOwner {
+  color: var(--color-slate-grey);
+  margin-bottom: 5px;
+}
+
+.Chat__ProductTitle {
+  font-weight: var(--weight-bold);
+}
+
+.Chat__ChatSection {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 600px;
+  padding: 100px 30px 30px 30px;
+  font-size: var(--font-regular);
+  color: var(--color-slate-grey);
+  font-weight: var(--weight-regular);
+  background-color: var(--color-beige);
+}
+
+.Chat__FromChat,
+.Chat__ToChat {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 20px 0;
+}
+
+.Chat__FromChat > span,
+.Chat__ToChat > span {
+  padding: 8px 12px;
+  border-radius: var(--size-border-radius);
+}
+
+.Chat__FromChat > span {
+  background-color: var(--color-white);
+}
+
+.Chat__FromChat > span::before {
+  border-top: 10px solid var(--color-white);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  content: "";
+}
+
+.Chat__ToChat > span {
+  background-color: var(--color-yellow);
+}
+
+.Chat__ToChat > span::after {
+  border-top: 10px solid var(--color-yellow);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  content: "";
+}
+
+.Chat__ToChat {
+  text-align: right;
+}
+
+.Chat__InputSection {
+  width: 100%;
+  background-color: var(--color-white);
+  align-items: flex-start;
+  padding: 10px 0 20px 0;
+  position: sticky;
+  bottom: 0px;
+  z-index: 1;
+  align-items: center;
+}
+
+.Chat__TextArea {
+  height: 80px;
+  width: 85%;
+  margin: 0 10px;
+  border: none;
+  outline: none;
+  font-size: var(--font-regular);
+  letter-spacing: 0.5px;
+  font-weight: var(--weight-regular);
+  resize: none;
+}
+
+.Chat__ChatButtonContainer {
+  width: 15%;
+}
+
+.Chat__ChatButton {
+  background-color: var(--color-yellow);
+  color: var(--color-grey);
+  font-size: var(--font-small);
+  padding: 10px 25px;
+  border-radius: var(--size-border-radius);
+}
