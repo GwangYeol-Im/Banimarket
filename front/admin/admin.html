@@ -175,9 +175,9 @@
           </div>
         </div>
       </section>
-      <!-- User Info Modal -->
-      <section class="Admin__InfoModal columnFlex">
-        <div class="InfoModal__Container">
+      <!-- User Info Modal (New)-->
+      <section class="Admin__NewInfoModal columnFlex">
+        <div class="NewInfoModal__Container">
           <div class="InfoModal__Section">
             <button class="InfoModal__CloseButton">
               <i class="fas fa-times"></i>
@@ -227,6 +227,81 @@
                   승인
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- User Info Modal (Cur)-->
+      <section class="Admin__CurInfoModal columnFlex">
+        <div class="CurInfoModal__Container">
+          <div class="InfoModal__Section">
+            <button class="InfoModal__CloseButton">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="InfoModal__Inner">
+              <h3 class="InfoModal__Title">상세 정보</h3>
+              <div class="InfoModal__InfoGroup korean__desc">
+                <dl class="Info__Id UserInfo">
+                  <dt>아이디</dt>
+                  <dd>kyle</dd>
+                </dl>
+                <dl class="Info__Name UserInfo">
+                  <dt>닉네임</dt>
+                  <dd>kyle</dd>
+                </dl>
+                <dl class="Info__Phone UserInfo">
+                  <dt>연락처</dt>
+                  <dd>010-1234-5678</dd>
+                </dl>
+                <form action="" class="Info__EditForm">
+                  <dl class="Info__College UserInfo">
+                    <dt>학교</dt>
+                    <dd> <div class="Info__InputBox">
+                      <input
+                        type="text"
+                        name="college"
+                        value="한국 폴리텍"
+                        class="Info__Input"
+                        id="Input__College"
+                      />
+                    </div></dd>
+                  </dl>
+                  <dl class="Info__StudentNum UserInfo">
+                    <dt>학번</dt>
+                    <dd> <div class="Info__InputBox">
+                      <input
+                        type="text"
+                        name="student number"
+                        value="2007110001"
+                        class="Info__Input"
+                        id="Input__StudentNum"
+                      />
+                    </div></dd>
+                  </dl>
+                  <dl class="Info__Status UserInfo">
+                    <dt>구분</dt>
+                    <dd> <div class="Info__InputBox">
+                      <input
+                        type="text"
+                        name="Info__Status"
+                        value="기숙사생"
+                        class="Info__Input"
+                        id="Input__Status"
+                      />
+                    </div></dd>
+                  </dl>
+                  <dl class="Info__Image UserInfo">
+                    <dt>첨부 사진</dt>
+                    <dd>
+                      <img
+                        src="../images/keyboard.jpeg"
+                        alt="재학 증명 이미지입니다"
+                      />
+                    </dd>
+                  </dl>
+                </div>
+                <button type="button" class="InfoModal__Button Edit">변경</button>
+                </form>
             </div>
           </div>
         </div>

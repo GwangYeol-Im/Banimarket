@@ -2,23 +2,42 @@
 
 const NewUserInfoBtn = document.querySelectorAll(".NewUser__InfoButton");
 const CurUserInfoBtn = document.querySelectorAll(".CurUser__InfoButton");
-const CloseButton = document.querySelector(".InfoModal__CloseButton");
+const CloseButton = document.querySelectorAll(".InfoModal__CloseButton");
 const ProfileTabLink = document.querySelector(".tablink_1");
 const PasswordTabLink = document.querySelector(".tablink_2");
 const Tabs = document.querySelectorAll(".tabs");
-const Modal = document.querySelector(".InfoModal__Container");
+const NewInfoModal = document.querySelector(".NewInfoModal__Container");
+const CurInfoModal = document.querySelector(".CurInfoModal__Container");
 const DarkBg = document.querySelector(".Dark__BackGround");
-const AccessButton = document.querySelector(".Access");
-const DenyButton = document.querySelector(".Deny");
+const AccessButton = document.querySelectorAll(".Access");
+const DenyButton = document.querySelectorAll(".Deny");
+const EditButton = document.querySelectorAll(".Edit");
 
-CloseButton.addEventListener("click", closeModal);
-AccessButton.addEventListener("click", closeModal);
-DenyButton.addEventListener("click", closeModal);
+for (let i = 0; i < AccessButton.length; i++) {
+  AccessButton[i].addEventListener("click", closeModal);
+}
+for (let i = 0; i < DenyButton.length; i++) {
+  DenyButton[i].addEventListener("click", closeModal);
+}
+for (let i = 0; i < EditButton.length; i++) {
+  EditButton[i].addEventListener("click", closeModal);
+}
+for (let i = 0; i < CloseButton.length; i++) {
+  CloseButton[i].addEventListener("click", closeModal);
+}
 for (let i = 0; i < NewUserInfoBtn.length; i++) {
-  NewUserInfoBtn[i].addEventListener("click", openModal);
+  NewUserInfoBtn[i].addEventListener(
+    "click",
+    () => openModal(NewInfoModal),
+    false
+  );
 }
 for (let i = 0; i < CurUserInfoBtn.length; i++) {
-  CurUserInfoBtn[i].addEventListener("click", openModal);
+  CurUserInfoBtn[i].addEventListener(
+    "click",
+    () => openModal(CurInfoModal),
+    false
+  );
 }
 
 function toggleTab(event, num) {
@@ -40,16 +59,18 @@ function toggleTab(event, num) {
   }
 }
 
-function openModal() {
-  if (Modal.style.opacity > 0) return;
+function openModal(modal) {
+  if (modal.style.opacity > 0) return;
   fadeIn(DarkBg.style, 0.3);
-  fadeIn(Modal.style, 0.9);
+  fadeIn(modal.style, 0.9);
 }
 
 function closeModal(event) {
   event.preventDefault();
-  Modal.style.display = "none";
-  Modal.style.opacity = "0";
+  CurInfoModal.style.display = "none";
+  CurInfoModal.style.opacity = "0";
+  NewInfoModal.style.display = "none";
+  NewInfoModal.style.opacity = "0";
   fadeOut(DarkBg.style);
 }
 

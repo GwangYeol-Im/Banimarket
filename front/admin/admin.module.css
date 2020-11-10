@@ -169,7 +169,8 @@ td {
 
 /* Info Modal */
 
-.InfoModal__Container {
+.NewInfoModal__Container,
+.CurInfoModal__Container {
   position: absolute;
   top: 100px;
   width: 600px;
@@ -213,6 +214,14 @@ td {
   flex-basis: 30%;
 }
 
+.Info__Input {
+  font-size: var(--font-small);
+  letter-spacing: 0.15px;
+  border: 1px solid var(--color-light-border);
+  width: 100%;
+  border-radius: var(--size-border-radius);
+}
+
 .Info__Image > dd > img {
   width: 100%;
   border-radius: var(--size-border-radius);
@@ -230,6 +239,11 @@ td {
   border-radius: var(--size-border-radius);
   color: var(--color-white);
   margin-top: 30px;
+}
+
+.Edit {
+  background-color: var(--color-blue);
+  float: right;
 }
 
 .Deny {
