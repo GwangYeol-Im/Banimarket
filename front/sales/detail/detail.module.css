@@ -35,6 +35,7 @@
   position: sticky;
   top: 0;
   background-color: var(--color-white);
+  z-index: 1;
 }
 
 .NavBar__Container {
@@ -73,7 +74,12 @@
   width: 700px;
 }
 
-.Detail__EnterEditButton {
+.Detail__EditSection {
+  justify-content: flex-end;
+}
+
+.Detail__EditButton,
+.Detail__DeleteButton {
   background-color: var(--color-light-orange);
   padding: 8px 25px;
   border-radius: var(--size-border-radius);
@@ -82,7 +88,7 @@
   opacity: 0.9;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
-  float: right;
+  margin-left: 5px;
 }
 
 .Detail__ContentImage {
