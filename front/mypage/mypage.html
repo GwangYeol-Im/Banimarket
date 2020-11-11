@@ -102,11 +102,20 @@
           <div class="MyPage__EditModal">
             <div class="EditModal__Container">
               <div class="EditModal__Section">
-                <button class="EditModal__CloseButton"><i class="fas fa-times"></i></button>
+                <button class="EditModal__CloseButton">
+                  <i class="fas fa-times"></i>
+                </button>
                 <div class="EditModal__Inner">
                   <div class="EditModal__Tabs">
-                    <button class="tablink_1 default" onclick="toggleTab(event, 1)">프로필 수정</button>
-                    <button class="tablink_2" onclick="toggleTab(event, 2)">비밀번호 변경</button>
+                    <button
+                      class="tablink_1 default"
+                      onclick="toggleTab(event, 1)"
+                    >
+                      프로필 수정
+                    </button>
+                    <button class="tablink_2" onclick="toggleTab(event, 2)">
+                      비밀번호 변경
+                    </button>
                   </div>
                   <form class="tabs tab_1 default">
                     <div class="EditModal__ProfileEdit columnFlex">
@@ -241,6 +250,33 @@
                       <div class="Product__Price">1,000,000원</div>
                     </a>
                   </div>
+                </div>
+              </section>
+            </div>
+            <div class="MyPage__ChatRecord korean__desc">
+              <section>
+                <div class="ChatRecord__Title">
+                  <h2>진행중인 거래</h2>
+                </div>
+                <div class="ChatRecord__Records">
+                  <ul class="Records__RecordList">
+                    <li class="Records__Record rowFlex">
+                      <div class="Record__Product">Samsung Galaxy S10</div>
+                      <div class="Record__ChatDate">20.11.11</div>
+                      <a href="" class="Record__EnterChat">
+                        <div class="Record__Buyer">
+                          Buyer<i class="fas fa-arrow-right"></i>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="Records__Record rowFlex">
+                      <div class="Record__Product">Samsung Galaxy S10</div>
+                      <div class="Record__ChatDate">20.11.11</div>
+                      <div class="Record__Buyer">
+                        Buyer<i class="fas fa-arrow-right"></i>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </section>
             </div>

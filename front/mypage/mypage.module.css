@@ -79,8 +79,7 @@
 .MyPage__LeftAside {
   margin-right: 40px;
   width: 360px;
-  box-shadow: rgba(41, 42, 43, 0.2) 0px 2px 6px,
-    rgba(41, 42, 43, 0.04) 0px 1px 0px;
+  box-shadow: var(--box-shadow);
 }
 
 .ProfileCard__Container {
@@ -143,15 +142,16 @@
 /* History */
 
 .MyPage__RightAside {
-  box-shadow: rgba(41, 42, 43, 0.2) 0px 2px 6px,
-    rgba(41, 42, 43, 0.04) 0px 1px 0px;
+  box-shadow: var(--box-shadow);
 }
 
-.MyPage__History {
+.MyPage__History,
+.MyPage__ChatRecord {
   padding: 32px;
 }
 
-.History__Title > h2 {
+.History__Title > h2,
+.ChatRecord__Title > h2 {
   margin-bottom: 20px;
   font-weight: var(--weight-bold);
   font-size: var(--font-medium);
@@ -193,6 +193,26 @@
 .Product__Price {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
+}
+
+/* ChatRecord */
+
+.Records__Record {
+  justify-content: space-around;
+  margin: 15px 0;
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-beige);
+}
+
+.Record__Buyer {
+  background-color: var(--color-smooth-green);
+  padding: 10px;
+  border-radius: var(--size-border-radius);
+  color: var(--color-slate-grey);
+}
+
+.Record__Buyer > i {
+  margin-left: 5px;
 }
 
 /* Edit Modal */
