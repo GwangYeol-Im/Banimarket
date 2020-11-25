@@ -66,9 +66,64 @@
 
 .Carousel__CarouselContainer {
   width: 100%;
-  height: 350px;
-  background-color: var(--color-light-orange);
-  margin-bottom: 40px;
+  height: 450px;
+  background-color: var(--color-banner);
+  margin: 50px 0;
+}
+
+.Carousel__BannerSection {
+  width: 1200px;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.Carousel__PopularViewTitle {
+  margin-left: 18px;
+  margin-bottom: 30px;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-semi-large);
+}
+
+.Carousel__PopularViewList {
+  width: 100%;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.Carousel__PopularView {
+  background-color: var(--color-white);
+  width: 30%;
+  height: 100%;
+  border-radius: var(--size-border-radius);
+}
+
+.PopularView__Container {
+  height: 100%;
+}
+
+.PopularVew__Image {
+  width: 80%;
+  border-radius: var(--size-border-radius);
+}
+
+.PopularView__Desc {
+  width: 80%;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.PopularView__Title {
+  font-weight: var(--weight-bold);
+  margin: 10px 0;
+}
+
+.PopularView__InnerDesc {
+  width: 100%;
+  justify-content: space-between;
+  color: var(--color-dark-grey);
 }
 
 /* MainPage */
@@ -88,7 +143,7 @@
   width: 50%;
   padding: 8px 12px;
   justify-content: space-between;
-  background-color: var(--color-beige);
+  background-color: var(--color-smooth-grey);
   border-radius: var(--size-border-radius);
 }
 
